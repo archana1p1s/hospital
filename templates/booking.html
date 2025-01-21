@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block cont %}
+<style>
+   body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("{% static 'images/main-image.jpg' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5; /* Adjust opacity here */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+</style>
+
+<h1 class="text-center m-5 text-danger">Booking Form</h1>
+
+<div class="container d-flex justify-content-center align-items-center text-center ">
+    <form action="" method="POST" class="p-5 border rounded bg-light mb-5">
+        {% csrf_token %}
+        {{ form|crispy}}
+        <button  type="submit" class="btn btn-info mt-3">Submit</button>
+    </form>
+</div>
+
+
+{% endblock cont %}

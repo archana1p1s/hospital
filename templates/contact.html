@@ -1,0 +1,59 @@
+{% extends "index.html" %}
+{% load static %}
+{% block cont %}
+<link rel="stylesheet" href="{% static "/css/contact.css" %}">
+<div class="container-fluid">
+    
+    <div class="row">
+      <div class="col-sm-6 p-5">
+<h1>Get In Touch With Us</h1>
+<p>If you can't find an answer to your questions, please don't hesitate to contact us.</p>
+<h4 class="name">Baby Memorial Hospital Limited</h4>
+<p>Indira Gandhi Road, Kozhikode - 673004 Kerala, India</p>
+<h3>PHONE</h3>
+<p> 📞: +91-495-2723272, +91-495-3535353</p>
+<p> 📞: +91-495-2777777</p>
+<h3>EMERGENCY</h3>
+<p> 📞:+91 974 720 0002</p>
+<h3>FAX</h3>
+<p> 📠: +91-495-2723484</p>
+<h3>EMAIL</h3>
+<p> ✉️: info@babymhospital.org</p>
+
+
+            
+    </div>
+      <div class="col-sm-6 p-5" >
+        <div class="container1 p-5" style="background-color: lavender; ">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>     
+       
+   
+     
+    </div>
+</div>
+<div class="container " >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.258413289102!2d76.86887802449479!3d8.571133045989093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bf007b402701%3A0x14d671dc0117cbd2!2sAJ%20Hospital!5e0!3m2!1sen!2sin!4v1736157661148!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+{% endblock cont %}

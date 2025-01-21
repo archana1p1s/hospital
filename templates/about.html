@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block cont %}
+<link rel="stylesheet" href="{% static "/css/about.css" %}">
+<div class="container mt-5">
+    <h1>About Us</h1>
+    <p>Hospitals provide a wide range of facilities aimed at ensuring the health and well-being of patients while offering support for medical professionals to deliver high-quality care. Modern hospitals are equipped with advanced diagnostic and imaging services, including X-rays, MRIs, and CT scans, to aid in accurate diagnosis and treatment planning. They offer specialized departments such as emergency care, surgery, pediatrics, cardiology, oncology, orthopedics, and maternity services, each staffed by trained professionals and equipped with the latest medical technology. Inpatient and outpatient services cater to patients who need short-term treatments or longer hospital stays, with comfortable rooms and comprehensive nursing care. Additionally, hospitals provide laboratory facilities for blood tests, biopsies, and other essential investigations. Pharmacies within the premises ensure easy access to prescribed medicines, while physiotherapy and rehabilitation centers aid in post-treatment recovery. Many hospitals also feature mental health support, nutrition counseling, and preventive healthcare programs to promote overall wellness. Alongside these, modern amenities such as cafeterias, waiting lounges, and 24/7 helplines make hospitals more patient-friendly, ensuring a holistic approach to healthcare delivery.</p>
+ 
+</div>
+
+<div class="container-fluid">
+    <h2 class="mt-5">OUR TEAM</h2>
+    <div class="row">
+      <div class="col-sm-4 p-5" style="background-color:lavender;"><img style="width: 100%;" src="{% static "/images/team1.jpg" %}" alt="">
+        <br><h3>Jane Doe</h3><br>
+        <h4 class="position">Chief Executive Officer (CEO)</h4><br>
+        <p>The CEO oversees the hospital's overall operations, strategy, and growth. They are responsible for aligning the hospital's goals with its mission and vision.</p>
+        <p>jane@example.com</p>
+            
+    </div>
+      <div class="col-sm-4 p-5" style="background-color:lavender;"><img style="width: 100%;" src="{% static "/images/team2.jpg" %}" alt="">
+            <br><h3>Mike Ross</h3><br>    
+        <h4 class="position">Chief Medical Officer (CMO)</h4>
+        <br>
+        <p>The CMO manages the medical staff, ensuring quality care and compliance with medical standards. They act as a liaison between administration and clinical teams.</p>
+        <p>mike@example.com</p>
+       
+    </div>
+      <div class="col-sm-4 p-5" style="background-color:lavender;" >
+        <img style="width: 100%;" src="{% static "/images/team3.jpg" %}" alt="">
+        <br><h3>John Doe</h3><br> 
+        <h4 class="position">Chief Nursing Officer (CMO)</h4>
+        <br>
+        <p>The CNO supervises nursing staff, ensuring high standards of patient care and efficient nursing operations.</p>
+    <br>
+        <p>john@example.com</p></div>
+     
+    </div>
+  </div>  
+
+
+  <div class="container-fluid">
+    <h2 class="mt-5">Accreditation and Certification</h2>
+    <div class="row">
+      <div class="col-sm-3 p-5" style="background-color:lavender;"><img src="{% static "/images/Logo1.png" %}" alt="">
+    
+            
+    </div>
+      <div class="col-sm-3 p-5" style="background-color:lavender;"><img src="{% static "/images/Logo2.png" %}" alt="">
+            
+       
+    </div>
+      <div class="col-sm-3 p-5" style="background-color:lavender;" >
+        <img src="{% static "/images/Logo3.png" %}" alt="">
+     
+    </div>
+    <div class="col-sm-3 p-5" style="background-color:lavender;" >
+        <img  style="width: 60%; height: 60%;" src="{% static "/images/Logo4.jpg" %}" alt="">
+     
+    </div>
+  </div>  
+
+{% endblock cont %}

@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block cont %}
+
+<style>
+body{
+background-color:powderblue;
+}
+</style>
+<h1 class="text-center text-primary">Our Doctors</h1>
+
+
+{% for d in doc %}
+
+<div class="card container text-center mx-4 my-3" style="width: 18rem; display:inline-block">
+    
+    <img  style="width: 285px; height: 200px;" class="card-img-top " src="{{d.doc_image.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{d.doc_name}}</h5>
+      <p class="card-text">{{d.doc_spec}}</p>
+      <p class="card-text">{{d.dep_name}}</p>
+      <a href="#" class="btn btn-primary">Book Now</a>
+    </div>
+  </div>
+
+{% endfor %}
+
+{% endblock cont %}
